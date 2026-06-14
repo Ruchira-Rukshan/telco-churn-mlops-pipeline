@@ -41,9 +41,9 @@ Our core predictive engine is powered by an **XGBClassifier** trained on data th
 
 | Metric | Score | Description |
 | :--- | :--- | :--- |
-| **Recall (Churners)** | **~85%** | Percentage of actual churners successfully identified. |
-| **ROC-AUC** | **~0.85** | Overall ability of the model to distinguish between classes. |
-| **F1-Score** | **~0.63** | Harmonic mean of Precision and Recall. |
+| **Recall (Churners)** | **~70%** | Percentage of actual churners successfully identified. |
+| **ROC-AUC** | **~0.86** | Overall ability of the model to distinguish between classes. |
+| **F1-Score** | **~0.64** | Harmonic mean of Precision and Recall. |
 | **Accuracy** | **~79%** | Overall correct predictions across both classes. |
 ## 🛠️ Technology Stack
 
