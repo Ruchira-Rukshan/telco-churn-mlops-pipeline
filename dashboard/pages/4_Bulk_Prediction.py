@@ -9,7 +9,8 @@ st.set_page_config(page_title="Bulk Prediction", page_icon="📁", layout="wide"
 st.title("Bulk Customer Churn Prediction")
 st.markdown("Upload a CSV file containing multiple customer records to predict their churn probabilities simultaneously.")
 
-API_URL = "http://127.0.0.1:8000"
+import os
+API_URL = os.environ.get("API_URL", "http://127.0.0.1:8000")
 
 st.info("The CSV must contain the standard Telco Customer Churn dataset columns.")
 

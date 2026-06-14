@@ -6,7 +6,8 @@ st.set_page_config(page_title="Single Prediction", page_icon="👤", layout="wid
 st.title("Single Customer Churn Prediction")
 st.markdown("Enter the customer details below to predict their likelihood of churning.")
 
-API_URL = "http://127.0.0.1:8000"
+import os
+API_URL = os.environ.get("API_URL", "http://127.0.0.1:8000")
 
 with st.form("prediction_form"):
     st.subheader("Demographics")

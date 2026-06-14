@@ -12,7 +12,8 @@ st.set_page_config(page_title="Model Performance", page_icon="⚙️", layout="w
 st.title("Model Performance & Evaluation")
 
 # API URL
-API_URL = "http://127.0.0.1:8000"
+import os
+API_URL = os.environ.get("API_URL", "http://127.0.0.1:8000")
 
 st.subheader("Model Information")
 try:
