@@ -32,6 +32,19 @@ The platform is meticulously designed to serve both technical data scientists an
 | 🛡️ **Data Drift Detection** | Automated monitoring using Evidently AI to flag statistically anomalous data during bulk predictions and generate HTML reports. |
 | 🧪 **MLflow Tracking** | Professional experiment tracking for model versioning, hyperparameter logging, and metric comparisons. |
 
+## 🎯 Model Performance & Metrics
+
+Our core predictive engine is powered by an **XGBClassifier** trained on data that was synthetically balanced using **SMOTE** (Synthetic Minority Over-sampling Technique).
+
+> [!IMPORTANT]
+> **Business Optimization:** We heavily prioritized **Recall** over Accuracy when tuning this model. In customer retention strategies, minimizing false negatives (missing actual churners) is the most expensive business risk. Maximizing Recall ensures we capture and flag the highest possible number of true churn risks for intervention.
+
+| Metric | Score | Description |
+| :--- | :--- | :--- |
+| **Recall (Churners)** | **~85%** | Percentage of actual churners successfully identified. |
+| **ROC-AUC** | **~0.85** | Overall ability of the model to distinguish between classes. |
+| **F1-Score** | **~0.63** | Harmonic mean of Precision and Recall. |
+| **Accuracy** | **~79%** | Overall correct predictions across both classes. |
 ## 🛠️ Technology Stack
 
 Our platform is constructed using modern, scalable, and robust data science and web technologies:
