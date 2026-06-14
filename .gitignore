@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Project Specific
+data/
+models/
+mlruns/
+mlflow.db
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+.ipynb_checkpoints/

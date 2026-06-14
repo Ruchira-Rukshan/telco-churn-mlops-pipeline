@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+streamlit
+pandas
+scikit-learn
+xgboost
+shap
+plotly
+joblib
+python-multipart
+matplotlib
+evidently
